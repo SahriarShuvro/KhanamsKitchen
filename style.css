@@ -235,6 +235,12 @@
             color: #fff;
             transition-duration: .5s;
         }
+        
+        .sing-in-nav1,
+        .sing-in-nav2,
+        .sing-in-nav3 {
+            display: none;
+        }
         /* Slider section  */
         /* Slide Images Start */
         
@@ -822,7 +828,7 @@
         
         .full-menu-card {
             width: 255px;
-            height: 360px;
+            height: auto;
             background: #fff;
             cursor: pointer;
             transition: .5s;
@@ -874,6 +880,9 @@
         
         .button {
             padding: 15px 0;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 0 !important;
         }
         
         .button a {
@@ -884,6 +893,8 @@
             font-size: 14px;
             font-weight: 600;
             transition: 0.5s;
+            margin: 5px 0;
+            text-align: center;
         }
         
         .button a:hover {
@@ -1295,7 +1306,7 @@
         
         .sing-grupe input {
             margin-bottom: 0 !important;
-            width: 600px;
+            width: 100%;
             text-align: center;
             padding: 10px 0;
             border: none;
@@ -1620,6 +1631,7 @@
             justify-content: center;
             margin: auto;
             padding: 30px 0;
+            padding-left: 30px;
         }
         
         .dash-sub-menu a {
@@ -1856,7 +1868,7 @@
             margin: auto;
             align-items: center;
             padding: 30px;
-            width: 60%;
+            width: 70%;
             border-radius: 1px;
             background: #f1f1f1;
             box-shadow: 5px 5px 5px #d2d2d2, -5px -5px 5px #ffffff;
@@ -2016,10 +2028,10 @@
             font-family: 'Exo 2', sans-serif;
             font-weight: bold;
             padding: 10px 40px;
-            color: #ff5100;
+            color: #fff;
             cursor: pointer;
             border-radius: 1px;
-            background: #f1f1f1;
+            background: #ff5100;
             box-shadow: 5px 5px 5px #d2d2d2, -5px -5px 5px #ffffff;
             transition: 0.7s;
             -webkit-transition: 0.7s;
@@ -2077,7 +2089,10 @@
         }
         
         .check-d-c {
-            width: 85%;
+            width: 55%;
+            align-items: center;
+            text-align: center;
+            margin-left: 65px;
         }
         
         .date-pd {
@@ -2328,8 +2343,8 @@
             /* Coustomer Panel Start  */
             .dash-sub-menu a {
                 font-size: 12px;
-                padding: 0;
                 margin-left: 0;
+                padding: 15px;
             }
             #reportrange {
                 font-size: 14px;
@@ -2348,7 +2363,7 @@
                 padding: 30px 0;
             }
             .control-group {
-                width: 55%;
+                width: 100%;
             }
             .meal-check h1 {
                 font-size: 2rem;
@@ -2359,6 +2374,20 @@
         /* 766px Responsive Start  */
         
         @media screen and (max-width: 766px) {
+            .sing-in-nav1,
+            .sing-in-nav2,
+            .sing-in-nav3 {
+                display: block;
+            }
+            .p-d,
+            .p-dd {
+                font-size: 14px;
+                width: 30px;
+                padding: 0 11px;
+            }
+            .date-pd {
+                margin: 5px 5px 0px 43px;
+            }
             .sticky-header {
                 position: fixed !important;
                 top: 0;
@@ -2539,6 +2568,9 @@
             }
             /* Contact Us Page Responsive End */
             /* Sing in Page Start  */
+            .call-sing-in {
+                display: none;
+            }
             .sing-in-page-log {
                 margin: 30px 5%;
             }
@@ -2587,6 +2619,11 @@
                 text-align: center;
                 padding-bottom: 20px;
             }
+            .dash-sub-menu a {
+                font-size: 10px;
+                margin-left: 0;
+                padding: 15px;
+            }
             #reportrange {
                 font-size: 14px;
             }
@@ -2594,8 +2631,11 @@
                 flex-direction: column;
             }
             .meal-amount {
-                width: 100%;
-                margin: 20px 0;
+                width: 90%;
+                display: flex;
+                margin: 20px auto;
+                justify-content: center;
+                align-items: center;
             }
             .t-meal {
                 padding: 22px 0;
@@ -2628,6 +2668,27 @@
             }
             .lunch-c-box {
                 width: 80%;
+            }
+            .sub-dash-cont {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+            }
+            .dash-sub-menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: auto;
+                padding: 30px 0;
+                padding-left: 10px;
+            }
+            .check-d-c {
+                width: 50%;
+                align-items: center;
+                text-align: center;
+                margin-left: 65px;
             }
             /* Coustomer Panel End */
         }

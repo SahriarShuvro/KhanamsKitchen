@@ -2,22 +2,51 @@
     {
         let disableCheck = document.querySelectorAll(".check-dis");
 
-        const d = new Date();
+        const d = new Date("July 30, 2022 21:00:00");
         let day = d.getDate();
-        for (let i = 0; i < 3; i++) {
+        let hour = d.getHours();
+        let minute = d.getMinutes();
+        for (let i = 0; i < 1; i++) {
             day++;
-            disableCheck[i].setAttribute("disabled", "disabled");
+            if (hour > 00) {
+                disableCheck[i].setAttribute("disabled", "disabled");
+            } else if (minute > 30) {
+                disableCheck[i].setAttribute("disabled", "disabled");
+
+            }
         }
-    } {
+    }
+
+    // Dinner 
+
+    {
         let disableCheck = document.querySelectorAll(".check-d");
 
         const d = new Date();
         let day = d.getDate();
-        for (let i = 0; i < 3; i++) {
+        let hour = d.getHours();
+        let minute = d.getMinutes();
+        for (let i = 0; i < 1; i++) {
             day++;
-            disableCheck[i].setAttribute("disabled", "disabled");
+            if (hour > 14) {
+                disableCheck[i].setAttribute("disabled", "disabled");
+            } else if (minute > 30) {
+                disableCheck[i].setAttribute("disabled", "disabled");
+
+            }
         }
     }
+
+    // {
+    //     let disableCheck = document.querySelectorAll(".check-d");
+
+    //     const d = new Date();
+    //     let day = d.getDate();
+    //     for (let i = 0; i < 1; i++) {
+    //         day++;
+    //         disableCheck[i].setAttribute("disabled", "disabled");
+    //     }
+    // }
 }
 
 {
