@@ -879,10 +879,9 @@
         }
         
         .button {
-            padding: 15px 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
-            padding-bottom: 0 !important;
         }
         
         .button a {
@@ -2965,4 +2964,4 @@
             }
             /* Customer Panel End */
         }
-        /* 1200px Responsive End */ 
+        /* 1200px Responsive End */
