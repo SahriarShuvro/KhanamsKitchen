@@ -2142,12 +2142,11 @@
             font-weight: bold;
         }
         
-        .add-lunch input {
+        .add-lunch textarea {
             width: 100%;
-            border: none;
-            border-radius: 20px;
+            border-radius: 50px;
             background: #f1f1f1;
-            box-shadow: inset 10px 10px 15px #cfcfcf, inset -32px -32px 25px #ffffff;
+            box-shadow: inset 5px 5px 15px #cfcfcf, inset -16px -16px 100px #ffffff;
             padding: 7px 34px;
         }
         
