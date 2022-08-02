@@ -2142,7 +2142,7 @@
             font-weight: bold;
         }
         
-        .add-lunch textarea {
+        .add-lunch textarea 
             width: 100%;
             border-radius: 50px;
             background: #f1f1f1;
