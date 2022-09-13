@@ -347,8 +347,9 @@
         
         .cntn-area {
             display: flex;
-            justify-content: space-between;
             padding-top: 10px;
+            align-items: center;
+            justify-content: center;
         }
         /* Order Timing Start  */
         
@@ -430,6 +431,7 @@
             justify-content: space-between;
             background: #fff;
             padding: 20px;
+            display: none;
         }
         
         .ggl-apl-stor {
@@ -608,7 +610,7 @@
         
         .footer-menu a {
             text-decoration: none;
-            text-shadow: 0px 4px 4px #00000079;
+            text-shadow: 0px 2px 3px #00000079;
             font-weight: bold;
             color: #4e5155;
             transition: .3s;
@@ -681,7 +683,7 @@
             color: #fff;
             background: #0062ff;
             transition: .5s;
-            box-shadow: 0px 4px 5px #3d3b3b65;
+            box-shadow: 0px 2px 5px #3d3b3b65;
             border: .5px solid#0062ff;
             padding: 3.7px 6px;
             border-radius: 50%;
@@ -696,7 +698,7 @@
         .fa-youtube {
             color: #fff;
             background: red;
-            box-shadow: 0px 4px 5px #3d3b3b65;
+            box-shadow: 0px 2px 5px #3d3b3b65;
             transition: .5s;
             border: .5px solid red;
             padding: 4px 2.7px;
@@ -1320,9 +1322,80 @@
             display: none;
         }
         
+        .sing-grupe.error input {
+            border: solid;
+            border-color: #f00;
+            border-width: 2px;
+        }
+        
+        .sing-grupe.success input {
+            border: solid;
+            border-color: #0b0;
+            border-width: 2px;
+        }
+        
+        .sing-grupe span {
+            display: none;
+        }
+        
+        .sing-grupe.error span {
+            color: #d70000;
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .sing-grupe.success span {
+            color: #0b0;
+        }
+        
+        .E-icon {
+            position: absolute;
+            margin-left: -40px;
+            margin-top: 9px;
+            color: #999898;
+            cursor: pointer;
+        }
+        
+        .lunch-disable-sing-up {
+            height: 110px;
+            background-color: #f1f1f1;
+            overflow: hidden;
+            z-index: 1;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+        }
+        
+        .dinner-dinner-sing-up {
+            height: 110px;
+            background-color: #f1f1f1;
+            overflow: hidden;
+            z-index: 1;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+        }
+        
         .delevery-loc {
             font-weight: bold;
             margin-bottom: 20px;
+        }
+        
+        .lunchDisableSing {
+            height: 0;
+        }
+        
+        .dinnerDisableSing {
+            height: 0;
+        }
+        
+        .footer-form {
+            padding-top: 10px;
         }
         
         .agree {
@@ -1333,6 +1406,16 @@
             text-decoration: none;
             color: #ff5100;
         }
+        
+        #errMsg,
+        #errMessage {
+            font-size: 12px;
+            color: #d70000;
+        }
+        /* .errMessage {
+            font-size: 12px;
+            color: #d70000;
+        } */
         
         .label {
             font-size: 12px;
@@ -1365,16 +1448,18 @@
             border: 1px solid #55575a;
         }
         
-        .btn-sections-sing input {
+        .btn-sections-sing button {
             border: 1px solid #55575a;
             background: #ff5100;
             color: #fff;
             padding: 5px 20px;
             transition: .5s;
             cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
         }
         
-        .btn-sections-sing input:hover {
+        .btn-sections-sing button:hover {
             background: #ff5100b6;
         }
         /* Sing UP Page End */
@@ -2142,7 +2227,7 @@
             font-weight: bold;
         }
         
-        .add-lunch textarea 
+        .add-lunch textarea {
             width: 100%;
             border-radius: 50px;
             background: #f1f1f1;
@@ -2874,7 +2959,7 @@
             }
             /* Sing in Section Start  */
             .sing-in-page-sec {
-                width: 300px;
+                width: 100%;
             }
             .header-sing-in h3 {
                 width: 130px;
@@ -2891,7 +2976,8 @@
                 font-size: 12px;
             }
             #sing-in-page {
-                width: 300px;
+                width: 100%;
+                font-size: 7px;
             }
             .sing-btn-page a {
                 font-size: 14px;

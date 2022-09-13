@@ -80,20 +80,36 @@
                 <div></div>
                 <h2>ORDER FOR NEW CUSTOMER</h2>
             </div>
+            <!-- Name  -->
             <div class="sing-grupe">
-                <input type="text" name="Name" class="sing-in-page" placeholder="ENTER YOUR FULL NAME">
-                <p class="para-val">Please enter customer name</p>
+                <input type="text" name="Name" class="sing-in-page" id="username" placeholder="ENTER YOUR FULL NAME">
+                <span></span>
             </div>
+            <!-- Email  -->
             <div class="sing-grupe">
-                <input type="email" name="Email" class="sing-in-page" placeholder="ENTER YOUR EMAIL">
-                <p class="para-val">Please enter phone number</p>
+                <input type="email" name="Email" class="sing-in-page" id="email" placeholder="ENTER YOUR EMAIL">
+                <span></span>
             </div>
+            <!-- Phone  -->
             <div class="sing-grupe">
-                <input type="text" name="Text" class="sing-in-page" placeholder="ENTER YOUR PHONE NUMBER">
-                <p class="para-val">Please select phone number</p>
+                <input type="text" name="Text" class="sing-in-page" id="phone" placeholder="ENTER YOUR PHONE NUMBER">
+                <span></span>
             </div>
+            <!-- Password  -->
             <div class="sing-grupe">
-                <select name="Dropdown" class="sing-in-page">
+                <input type="password" name="Text" class="sing-in-page" id="pass1" placeholder="ENTER YOUR PASSWORD">
+                <i class="fa-solid fa-eye E-icon" id="eyeIcon"></i>
+                <span></span>
+            </div>
+            <!-- Password 2  -->
+            <div class="sing-grupe">
+                <input type="password" name="Text" class="sing-in-page" id="pass2" placeholder="RE-ENTER YOUR PASSWORD">
+                <i class="fa-solid fa-eye E-icon" id="eyeIcon2"></i>
+                <span></span>
+            </div>
+            <!-- Location  -->
+            <div class="sing-grupe">
+                <select name="Dropdown" class="sing-in-page" id="location">
                     <option value="volvo">SELECT YOUR AREA</option>
                     <option value="saab">BINODPUR</option>
                     <option value="saab">KAZLA</option>
@@ -107,24 +123,55 @@
                     <option value="saab">VATAPAR</option>
                     <option value="saab">MOHISBATHAN</option>
                 </select>
-                <p class="para-val">Please select area location</p>
+                <span></span>
             </div>
+            <!-- Profession  -->
             <div class="sing-grupe">
-                <input type="text" name="Text" class="sing-in-page" placeholder="ENTER YOUR PROFESSION">
-                <p class="para-val">Please enter profession</p>
+                <input type="text" name="Text" class="sing-in-page" id="profession" placeholder="ENTER YOUR PROFESSION">
+                <span></span>
             </div>
+            <!-- Lunch & Dinner Check box Section  -->
             <div class="delevery-loc">
                 <div>
+                    <!-- Lunch  -->
                     <label for="location">DELIVERY LOCATION : </label>
-                    <input type="checkbox" name="Lunch" id="lunch-ck">
+                    <input type="checkbox" name="Lunch" checked="checked" id="lunch-ck">
                     <label for="lunch">Lunch</label>
-                    <input type="checkbox" name="Dinner" id="dinner-ck">
+                    <!-- Dinner  -->
+                    <input type="checkbox" name="Dinner" checked="checked" id="dinner-ck">
                     <label for="lunch">Dinner</label>
+                    <span id="errMessage"></span>
                 </div>
-                <p class="para-val">Please select package</p>
             </div>
-            <div class="sing-grupe">
-                <select name="Dropdown" class="sing-in-page">
+            <!-- Lunch Delivery Location Section -->
+            <div class="lunch-disable-sing-up" id="lunchSing">
+                <div class="sing-grupe">
+                    <select name="Dropdown" class="sing-in-page" id="locationLunch">
+                        <option value="volvo">SELECT YOUR AREA</option>
+                        <option value="saab">BINODPUR</option>
+                        <option value="saab">KAZLA</option>
+                        <option value="saab">OCTORY MOR</option>
+                        <option value="saab">VODRA</option>
+                        <option value="saab">BAIAPUKUR</option>
+                        <option value="saab">TIKAPAR</option>
+                        <option value="saab">BELDARPARA</option>
+                        <option value="saab">BORNALI</option>
+                        <option value="saab">LAXMIPUR</option>
+                        <option value="saab">VATAPAR</option>
+                        <option value="saab">MOHISBATHAN</option>
+                    </select>
+                    <span></span>
+                </div>
+                <!-- Lunch Location Input  -->
+                <div class="sing-grupe">
+                    <input type="text" name="Text" class="sing-in-page" id="enterLunch" placeholder="ENTER YOUR LUNCH LOCATION">
+                    <span></span>
+                </div>
+            </div>
+            <!-- Dinner Location Section  -->
+            <div class="dinner-dinner-sing-up" id="dinnerSing">
+                <div class="sing-grupe">
+                    <select name="Dropdown" class="sing-in-page" id="locationDinner">
                     <option value="volvo">SELECT YOUR AREA</option>
                     <option value="saab">BINODPUR</option>
                     <option value="saab">KAZLA</option>
@@ -138,42 +185,26 @@
                     <option value="saab">VATAPAR</option>
                     <option value="saab">MOHISBATHAN</option>
                 </select>
-                <p class="para-val">Please select area location</p>
+                    <span></span>
+                </div>
+                <!-- Dinner Location input  -->
+                <div class="sing-grupe">
+                    <input type="text" name="Text" class="sing-in-page" id="enterDinner" placeholder="ENTER YOUR DINNER LOCATION">
+                    <span></span>
+                </div>
             </div>
-
-            <div class="sing-grupe">
-                <input type="text" name="Text" class="sing-in-page" placeholder="ENTER YOUR LUNCH LOCATION">
-            </div>
-            <div class="sing-grupe">
-                <select name="Dropdown" class="sing-in-page">
-                    <option value="volvo">SELECT YOUR AREA</option>
-                    <option value="saab">BINODPUR</option>
-                    <option value="saab">KAZLA</option>
-                    <option value="saab">OCTORY MOR</option>
-                    <option value="saab">VODRA</option>
-                    <option value="saab">BAIAPUKUR</option>
-                    <option value="saab">TIKAPAR</option>
-                    <option value="saab">BELDARPARA</option>
-                    <option value="saab">BORNALI</option>
-                    <option value="saab">LAXMIPUR</option>
-                    <option value="saab">VATAPAR</option>
-                    <option value="saab">MOHISBATHAN</option>
-                </select>
-                <p class="para-val">Please select area location</p>
-            </div>
-
-            <div class="sing-grupe">
-                <input type="text" name="Text" class="sing-in-page" placeholder="ENTER YOUR DINNER LOCATION">
-            </div>
-            <div class="agree">
-                <input type="checkbox" name="Lunch" id="lunch-ck">
-                <label for="location">I AGREE TO THE <a href=" tarms.html">TERMS OF SERVICE</a> </label>
-                <label for="err" class="label">(You must agree to the Terms of Service)</label>
-            </div>
-            <div class="btn-sections-sing">
-                <a href="#" class="go-back">
-                    << GO BACK</a>
-                        <input type="submit" value="SUBMIT" id="submit">
+            <!-- Agree Section  -->
+            <div class="footer-form">
+                <div class="agree">
+                    <input type="checkbox" name="Lunch" id="agreeCheck">
+                    <label for="location">I AGREE TO THE <a href=" tarms.html">TERMS OF SERVICE</a> </label>
+                    <span id="errMsg"></span>
+                </div>
+                <div class="btn-sections-sing">
+                    <a href="#" class="go-back">
+                        << GO BACK</a>
+                            <button type="submit" id="submit">Submit</button>
+                </div>
             </div>
         </div>
     </div>
