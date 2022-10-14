@@ -78,198 +78,631 @@
         <div class="sub-d-container">
             <div class="dash-menu">
                 <div class="dash-sub-menu">
-                    <a href=" dashbord.html" class="dash-btn">Dashboard</a>
-                    <a href=" mealonof.html" style="background: #f1f1f1; box-shadow:none;">Meal On/Off</a>
+                    <a href=" dashbord.html">Dashboard</a>
+                    <a href="profile.html" class="profile-btn">Profile</a>
+                    <a href=" mealonof.html" class="mealonof-btn" style="background: #f1f1f1; box-shadow:none;">Meal On/Off</a>
                     <a href=" setting.html" class="setting-btn">Setting</a>
                     <a href=" history.html" class="history-btn">History</a>
                 </div>
             </div>
             <!-- Dashbord menu Section End -->
         </div>
-        <!-- Dashbord menu Section End -->
         <div class="d-container">
-            <!-- Dashbord Heading Section Start  -->
-            <div class="sub-dash-cont">
-                <div class="dash-hed">
-                    <h1><span>Khanam's Kitchen</span> <span class="c-p">Customer's Panel</span></h1>
+            <!-- Dashbord menu Section End -->
+            <div class="" id="MealOnOFFsec">
+                <!-- Dashbord Heading Section Start  -->
+                <div class="sub-dash-cont">
+                    <div class="dash-hed">
+                        <h1><span>Khanam's Kitchen</span> <span class="c-p">Customer's Panel</span></h1>
+                    </div>
                 </div>
-            </div>
-            <div class="meal-check">
-                <h1>Meal On/Off</h1>
-                <div class="lunch-check">
-                    <div class="lunch-c-box">
-                        <div class="l-h-box">
-                            <p>Lunch</p>
-                        </div>
-                        <div class="lunch-next-check">
-                            <div class="check-d-c">
-                                <div class="control-group">
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-dis" />
-                                        <div class="control_indicator"></div>
-                                    </label>
+                <div class="meal-check">
+                    <h1>Meal On/Off Setting</h1>
 
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-dis" />
-                                        <div class="control_indicator"></div>
-                                    </label>
+                    <!-- Lunch/Dinner Area Start  -->
+                    <div class="switchBTN">
+                        <button class="packageChange mealOnOffBtn" id="packageChage" value="1"> Package Change</button>
+                    </div>
 
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-dis" />
-                                        <div class="control_indicator"></div>
-                                    </label>
 
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-dis" />
-                                        <div class="control_indicator"></div>
-                                    </label>
-
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-dis" />
-                                        <div class="control_indicator"></div>
-                                    </label>
-
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-dis" />
-                                        <div class="control_indicator"></div>
-                                    </label>
-                                    <span></span>
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-dis" />
-                                        <div class="control_indicator"></div>
-                                    </label>
-
-                                </div>
-                                <div class="control-group date-pd">
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <!-- <p class="p-d">8</p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p>
-                                    <p class="p-d"></p> -->
-
+                    <!-- Lunch Area Start  -->
+                    <div class="lunch-check">
+                        <div class="lunch-c-box">
+                            <div class=" mealOn">
+                                <p class="normal">Normal</p>
+                                <p class="spacial">Spacial</p>
+                            </div>
+                            <div class="l-h-box">
+                                <p>Lunch</p>
+                                <div class="mealAmount">
+                                    <input type="number" name="Enter Your Number" value="1" min="1" step="1" class="mealInput" id="mealInput" required>
                                 </div>
                             </div>
-                            <div class="next-btn" title="Next 7 Days">
-                                <i class="fa-solid fa-chevron-right"></i>
+                            <div class="lunch-next-check">
+                                <div class="check-d-c">
+                                    <div class="control-group weekCheck">
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <span></span>
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                    </div>
+                                    <div class="control-group date-pd">
+                                        <p class="p-d"></p>
+                                        <p class="p-d"></p>
+                                        <p class="p-d"></p>
+                                        <p class="p-d"></p>
+                                        <p class="p-d"></p>
+                                        <p class="p-d"></p>
+                                        <p class="p-d"></p>
+
+                                    </div>
+                                </div>
+                                <div class="next-btn" title="Next 7 Days">
+                                    <div class="checkAll">
+                                        <label class="control control-checkbox check-all">
+                                            <input type="checkbox" class="clickToCheckUncheckL"  checked="checked" />
+                                            <div class="control_indicator onClickE"></div>
+                                        </label>
+                                        <p class="txtCheckUncheckL" id="test"> </p>
+                                    </div>
+                                    <div class="untillOnOff ">
+                                        <label class="control control-checkbox check-all ">
+                                            <input type="checkbox" class="clickToOnOfL" checked="checked" />
+                                            <div class="control_indicator onClickE"></div>
+                                        </label>
+                                        <p class="txtOnOfL"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expandDtls" id="expandDtls">
+                                <p class="eDtlsBTN" id="expandDtlsID1">Expand Details</p>
+                                <div class="dtls" id="ActiveDtls1">
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="lunch-check dinner-check">
-                    <div class="lunch-c-box">
-                        <div class="l-h-box">
-                            <p>Dinner</p>
-                        </div>
-                        <div class="lunch-next-check">
-                            <div class="check-d-c">
-                                <div class="control-group">
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-d" />
-                                        <div class="control_indicator"></div>
-                                    </label>
+                    <!-- Lunch Area End -->
 
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-d" />
-                                        <div class="control_indicator"></div>
-                                    </label>
 
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-d" />
-                                        <div class="control_indicator"></div>
-                                    </label>
-
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-d" />
-                                        <div class="control_indicator"></div>
-                                    </label>
-
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-d" />
-                                        <div class="control_indicator"></div>
-                                    </label>
-
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-d" />
-                                        <div class="control_indicator"></div>
-                                    </label>
-                                    <span></span>
-                                    <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-d" />
-                                        <div class="control_indicator"></div>
-                                    </label>
-
-                                </div>
-                                <div class="control-group date-pd">
-                                    <p class="p-dd"></p>
-                                    <p class="p-dd"></p>
-                                    <p class="p-dd"></p>
-                                    <p class="p-dd"></p>
-                                    <p class="p-dd"></p>
-                                    <p class="p-dd"></p>
-                                    <p class="p-dd"></p>
-                                    <!-- <p class="p-dd">8</p>
-                                    <p class="p-dd">9</p>
-                                    <p class="p-dd">10</p>
-                                    <p class="p-dd">11</p>
-                                    <p class="p-dd">12</p>
-                                    <p class="p-dd">13</p>
-                                    <p class="p-dd">14</p>
-                                    <p class="p-dd">15</p>
-                                    <p class="p-dd">16</p>
-                                    <p class="p-dd">17</p>
-                                    <p class="p-dd">18</p>
-                                    <p class="p-dd">19</p>
-                                    <p class="p-dd">20</p>
-                                    <p class="p-dd">21</p>
-                                    <p class="p-dd">22</p>
-                                    <p class="p-dd">23</p>
-                                    <p class="p-dd">24</p>
-                                    <p class="p-dd">25</p>
-                                    <p class="p-dd">26</p>
-                                    <p class="p-dd">27</p>
-                                    <p class="p-dd">28</p>
-                                    <p class="p-dd">29</p>
-                                    <p class="p-dd">30</p>
-                                    <p class="p-dd">31</p> -->
-
+                    <!-- Dinner Area Start  -->
+                    <div class="lunch-check dinner-check">
+                        <div class="lunch-c-box">
+                            <div class=" mealOn">
+                                <p class="normal">Normal</p>
+                                <p class="spacial">Spacial</p>
+                            </div>
+                            <div class="l-h-box">
+                                <p>Dinner</p>
+                                <div class="mealAmount">
+                                    <input type="number" name="Enter Your Number" value="1" min="1" step="1" class="mealInput" id="mealInput" required>
                                 </div>
                             </div>
-                            <div class="next-btn" title="Next 7 Days">
-                                <i class="fa-solid fa-chevron-right"></i>
+                            <div class="lunch-next-check">
+                                <div class="check-d-c">
+                                    <div class="control-group weekCheck">
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <span></span>
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                    </div>
+                                    <div class="control-group date-pd">
+                                        <p class="p-dd"></p>
+                                        <p class="p-dd"></p>
+                                        <p class="p-dd"></p>
+                                        <p class="p-dd"></p>
+                                        <p class="p-dd"></p>
+                                        <p class="p-dd"></p>
+                                        <p class="p-dd"></p>
+                                    </div>
+                                </div>
+                                <div class="next-btn">
+                                    <div class="checkAll">
+                                        <label class="control control-checkbox check-all">
+                                            <input type="checkbox" class="clickToCheckUncheckD"/>
+                                            <div class="control_indicator onClickE"></div>
+                                        </label>
+                                        <p class="txtCheckUncheckD"> </p>
+                                    </div>
+                                    <div class="untillOnOff">
+                                        <label class="control control-checkbox check-all">
+                                            <input type="checkbox" class="clickToOnOfD" checked="checked" />
+                                            <div class="control_indicator onClickE"></div>
+                                        </label>
+                                        <p class="txtOnOfD"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expandDtls" id="expandDtls">
+                                <p class="eDtlsBTN" id="expandDtlsID2">Expand Details</p>
+                                <div class="dtls" id="ActiveDtls2">
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Dinner Area End -->
                 </div>
+
                 <div class="meal-save">
                     <input type="submit" value="Save" title="Save your meal">
                 </div>
             </div>
+            <!-- Lunch/Dinner Area End -->
+
+            <!-- Package Change Section start-->
+            <div class="" id="PacageChangeS">
+                <!-- Dashbord Heading Section Start  -->
+                <div class="sub-dash-cont">
+                    <div class="dash-hed">
+                        <h1><span>Khanam's Kitchen</span> <span class="c-p">Customer's Panel</span></h1>
+                    </div>
+                </div>
+                <div class="meal-check">
+                    <h1>Package Change Setting</h1>
+                    <div class="switchBTN">
+                        <button class="mealOnOffBtn" id="mealOnOff" value="2"> Meal On/Off Setting</button>
+                    </div>
+                    <!-- Lunch Section Start  -->
+                    <div class="lunch-check">
+                        <div class="lunch-c-box">
+                            <div class="mealOn">
+                                <p class="normal">Normal</p>
+                                <p class="spacial">Spacial</p>
+                            </div>
+                            <div class="l-h-box">
+                                <p>Lunch</p>
+                            </div>
+
+                            <!-- Normal Package For Lunch Section  -->
+                            <div class="l-h-box normal">
+                                <p>Normal</p>
+                            </div>
+                            <div class="mealAmount">
+                                <input type="number" name="Enter Your Number" value="1" min="1" step="1" class="mealInput" id="mealInput" required>
+                            </div>
+                            <div class="regular">
+                                <label class="control control-checkbox">
+                                    <input type="checkbox" checked="checked" class="RegularCheckeNormalL" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <p>Regular</p>
+                            </div>
+                            <div class="lunch-next-check">
+                                <div class="check-d-c">
+                                    <div class="control-group weekCheck">
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForNormalL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForNormalL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForNormalL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForNormalL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForNormalL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForNormalL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <span></span>
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForNormalL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                    </div>
+                                    <div class="control-group date-pd">
+                                        <p class="p-d1"></p>
+                                        <p class="p-d1"></p>
+                                        <p class="p-d1"></p>
+                                        <p class="p-d1"></p>
+                                        <p class="p-d1"></p>
+                                        <p class="p-d1"></p>
+                                        <p class="p-d1"></p>
+                                    </div>
+                                </div>
+                                <div class="next-btn">
+                                    <div class="checkAll">
+                                        <label class="control control-checkbox check-all">
+                                            <input type="checkbox" class="clickToCheckUncheckNormalL" />
+                                            <div class="control_indicator onClickE"></div>
+                                        </label>
+                                        <p class="txtCheckUncheckNormalL"> </p>
+                                    </div>
+                                    <div class="untillOnOff">
+                                        <label class="control control-checkbox check-all">
+                                            <input type="checkbox" class="onClickOnOf" />
+                                            <div class="control_indicator onClickE"></div>
+                                        </label>
+                                        <p class="txtOnOfNormalL"></p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!-- Spacial Package For Lunch Section  -->
+                            <div class="l-h-box spacial">
+                                <p>Spacial</p>
+                            </div>
+                            <div class="mealAmount">
+                                <input type="number" name="Enter Your Number" value="1" min="1" step="1" class="mealInput" id="mealInput" required>
+                            </div>
+                            <div class="regular">
+                                <label class="control control-checkbox">
+                                    <input type="checkbox" checked="checked" class="RegularCheckeSpacilL" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <p>Regular</p>
+                            </div>
+                            <div class="lunch-next-check">
+                                <div class="check-d-c">
+                                    <div class="control-group weekCheck">
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForSpacialL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForSpacialL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForSpacialL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForSpacialL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForSpacialL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForSpacialL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <span></span>
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-dis dayCheckForSpacialL" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                    </div>
+                                    <div class="control-group date-pd">
+                                        <p class="p-d2"></p>
+                                        <p class="p-d2"></p>
+                                        <p class="p-d2"></p>
+                                        <p class="p-d2"></p>
+                                        <p class="p-d2"></p>
+                                        <p class="p-d2"></p>
+                                        <p class="p-d2"></p>
+                                    </div>
+                                </div>
+                                <div class="next-btn">
+                                    <div class="checkAll">
+                                        <label class="control control-checkbox check-all">
+                                            <input type="checkbox" class="clickToCheckUncheckSpacialL" />
+                                            <div class="control_indicator onClickE"></div>
+                                        </label>
+                                        <p class="txtCheckUncheckSpacialL"> </p>
+                                    </div>
+                                    <div class="untillOnOff">
+                                        <label class="control control-checkbox check-all">
+                                            <input type="checkbox" class="clickOnOfSpacialL" />
+                                            <div class="control_indicator onClickE"></div>
+                                        </label>
+                                        <p class="txtOnOfSpacialL"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expandDtls" id="expandDtls">
+                                <p class="eDtlsBTN" id="expandDtlsID3">Expand Details</p>
+                                <div class="dtls" id="ActiveDtls3">
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Lunch Section End -->
+
+
+                    <!-- Dinner Section Start  -->
+                    <div class="lunch-check dinner-check">
+                        <div class="lunch-c-box">
+                            <div class="mealOn">
+                                <p class="normal">Normal</p>
+                                <p class="spacial">Spacial</p>
+                            </div>
+                            <div class="l-h-box">
+                                <p>Dinner</p>
+                            </div>
+
+                            <!-- Normal Package for dinner  -->
+                            <div class="l-h-box normal">
+                                <p>Normal</p>
+                            </div>
+                            <div class="mealAmount">
+                                <input type="number" name="Enter Your Number" value="1" min="1" step="1" class="mealInput" id="mealInput" required>
+                            </div>
+                            <div class="regular">
+                                <label class="control control-checkbox">
+                                    <input type="checkbox" checked="checked" class="RegularCheckeNormalD" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <p>Regular</p>
+                            </div>
+                            <div class="lunch-next-check">
+                                <div class="check-d-c">
+                                    <div class="control-group weekCheck">
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForNormalD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForNormalD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForNormalD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForNormalD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForNormalD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForNormalD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <span></span>
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForNormalD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                    </div>
+                                    <div class="control-group date-pd">
+                                        <p class="p-d3"></p>
+                                        <p class="p-d3"></p>
+                                        <p class="p-d3"></p>
+                                        <p class="p-d3"></p>
+                                        <p class="p-d3"></p>
+                                        <p class="p-d3"></p>
+                                        <p class="p-d3"></p>
+                                    </div>
+                                </div>
+                                <div class="next-btn">
+                                    <div class="checkAll">
+                                        <label class="control control-checkbox check-all">
+                                            <input type="checkbox" class="clickToCheckUncheckNormalD" />
+                                            <div class="control_indicator onClickE"></div>
+                                        </label>
+                                        <p class="txtCheckUncheckNormalD"> </p>
+                                    </div>
+                                    <div class="untillOnOff">
+                                        <label class="control control-checkbox check-all">
+                                            <input type="checkbox" class="clickToOnOfNormalD" />
+                                            <div class="control_indicator onClickE"></div>
+                                        </label>
+                                        <p class="txtOnOfNormalD"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Spacial Package For Dinner  -->
+                            <div class="l-h-box spacial">
+                                <p>Spacial</p>
+                            </div>
+                            <div class="mealAmount">
+                                <input type="number" name="Enter Your Number" value="1" min="1" step="1" class="mealInput" id="mealInput" required>
+                            </div>
+                            <div class="regular">
+                                <label class="control control-checkbox">
+                                    <input type="checkbox" checked="checked" class="RegularCheckeSpacilD" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <p>Regular</p>
+                            </div>
+                            <div class="lunch-next-check">
+                                <div class="check-d-c">
+                                    <div class="control-group weekCheck">
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForSpacialD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForSpacialD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForSpacialD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForSpacialD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForSpacialD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForSpacialD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <span></span>
+                                        <label class="control control-checkbox">
+                                            <input type="checkbox"  class="check-d dayCheckForSpacialD" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                    </div>
+                                    <div class="control-group date-pd">
+                                        <p class="p-d4"></p>
+                                        <p class="p-d4"></p>
+                                        <p class="p-d4"></p>
+                                        <p class="p-d4"></p>
+                                        <p class="p-d4"></p>
+                                        <p class="p-d4"></p>
+                                        <p class="p-d4"></p>
+                                    </div>
+                                </div>
+                                <div class="next-btn">
+                                    <div class="checkAll">
+                                        <label class="control control-checkbox check-all">
+                                            <input type="checkbox" class="clickToCheckUncheckSpacialD" />
+                                            <div class="control_indicator onClickE"></div>
+                                        </label>
+                                        <p class="txtCheckUncheckSpacialD"></p>
+                                    </div>
+                                    <div class="untillOnOff">
+                                        <label class="control control-checkbox check-all">
+                                            <input type="checkbox" class="clickToOnOfSpacialD" />
+                                            <div class="control_indicator onClickE"></div>
+                                        </label>
+                                        <p class="txtOnOfSpacialD"></p>
+                                    </div>
+                                </div>
+                                <div class="expandDtls" id="expandDtls">
+                                    <p class="eDtlsBTN" id="expandDtlsID4">Expand Details</p>
+                                    <div class="dtls" id="ActiveDtls4">
+                                        <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                        <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                        <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                        <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                        <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                        <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                        <p>10, Sunday 1 Spacial, 2 Normal</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dinner Section End -->
+
+                    <!-- Save Button  -->
+                    <div class="meal-save">
+                        <input type="submit" value="Save" title="Save your meal">
+                    </div>
+                </div>
+            </div>
+            <!-- Package Change Section end -->
         </div>
     </div>
     <!-- Dashbord Section End -->
@@ -309,6 +742,25 @@
     <script src="js/main.js"></script>
     <script src="js/mealonof.js"></script>
     <script src="js/mealonof2.js"></script>
+    <script>
+        { // Click Event 
+            let mealONoffBTn = document.getElementById('mealOnOff');
+            let packageChangeBTn = document.getElementById('packageChage');
+            // React 
+            let mealONoff = document.getElementById('MealOnOFFsec');
+            let PacageChangeS = document.getElementById('PacageChangeS');
+
+
+            mealONoffBTn.addEventListener('click', function() {
+                mealONoff.classList.toggle('mealONoffdiv')
+                PacageChangeS.classList.toggle('PacageChangeS')
+            })
+            packageChangeBTn.addEventListener('click', function() {
+                mealONoff.classList.toggle('mealONoffdiv')
+                PacageChangeS.classList.toggle('PacageChangeS')
+            })
+        }
+    </script>
 </body>
 
 

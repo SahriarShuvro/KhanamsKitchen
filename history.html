@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <!-- Foont Awesome Link End -->
+    <!-- BoodtStrap 5  -->
+    <!-- BoodtStrap 5  -->
+    <!-- Date Ranger Peeker  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
 </head>
 
@@ -77,10 +84,11 @@
         <div class="sub-d-container">
             <div class="dash-menu">
                 <div class="dash-sub-menu">
-                    <a href=" dashbord.html" class="dash-btn">Dashboard</a>
+                    <a href=" dashbord.html">Dashboard</a>
+                    <a href="profile.html" class="profile-btn">Profile</a>
                     <a href=" mealonof.html" class="mealonof-btn">Meal On/Off</a>
                     <a href=" setting.html" class="setting-btn">Setting</a>
-                    <a href=" history.html" style="background: #f1f1f1; box-shadow:none;">History</a>
+                    <a href=" history.html" class="history-btn" style="background: #f1f1f1; box-shadow:none;">History</a>
                 </div>
             </div>
             <!-- Dashbord menu Section End -->
@@ -88,9 +96,169 @@
         <!-- Dashbord menu Section End -->
         <div class="d-container">
             <!-- Dashbord Heading Section Start  -->
+            <button class="openD eDtlsBTN" id="epandDO">Expand Details</button>
+            <button class="clsD eDtlsBTN" id="epandDC">Close Details</button>
+            <div class="contentTop " id="expandID">
+                <div class="meal total-meal ">
+                    <i class="fa-solid fa-bowl-food total-meal"></i>
+                    <div class="lable  meal">
+                        <p>Total Meal</p>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="meal meal-lunch ">
+                    <i class="fa-solid fa-sun meal-lunch"></i>
+                    <div class="lable  meal">
+                        <p>Lunch</p>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="meal meal-dinner ">
+                    <i class="fa-regular fa-moon meal-dinner"></i>
+                    <div class="lable  meal">
+                        <p>Dinner</p>
+                        <p>100</p>
+                    </div>
+                </div>
+                <div class="meal meal-normal ">
+                    <i class="fa-solid fa-bowl-rice meal-normal"></i>
+                    <div class="lable  meal">
+                        <p>Normal Meal</p>
+                        <p>90</p>
+                    </div>
+                </div>
+                <div class="meal meal-special ">
+                    <i class="fa-solid  fa-drumstick-bite meal-special"></i>
+                    <div class="lable  meal">
+                        <p>Special Meal</p>
+                        <p>10</p>
+                    </div>
+                </div>
+                <div class="meal meal-Customized ">
+                    <i class="fa-solid fa-stroopwafel meal-Customized"></i>
+                    <div class="lable  meal">
+                        <p>Customized Meal</p>
+                        <p>100</p>
+                    </div>
+                </div>
+                <div class="meal meal-deposit ">
+                    <i class="fa-solid fa-stroopwafel meal-deposit"></i>
+                    <div class="lable  meal">
+                        <p>Deposit</p>
+                        <p>3000</p>
+                    </div>
+                </div>
+                <div class="meal meal-LMS ">
+                    <i class="fa-solid fa-stroopwafel meal-LMS"></i>
+                    <div class="lable  meal">
+                        <p>LMS</p>
+                        <p>-100</p>
+                    </div>
+                </div>
+                <div class="meal profit ">
+                    <i class="fa-solid fa-sack-dollar profit "></i>
+                    <div class="lable  meal">
+                        <p>Profit</p>
+                        <p>100</p>
+                    </div>
+                </div>
+            </div>
             <div class="sub-dash-cont">
                 <div class="dash-hed">
                     <h1><span>Khanam's Kitchen</span> <span class="c-p">Customer's Panel</span></h1>
+                </div>
+                <div class="b-tbl-s" id="dark">
+                    <div id="html2pdf" style="width: 100% ;font-family: 'Exo 2', sans-serif !important; font-weight: bold;">
+                        <div class="filters">
+                            <div class="datepeeker">
+                                <input type="text" name="daterange" value=" ">
+                            </div>
+                            <div class="packageM">
+                                <select name="package" id="packageM">
+                                    <option value="" selected="selected">--Select Package--</option>
+                                    <option value="1">Student Meal 1</option>
+                                    <option value="2">Student Meal 2</option>
+                                </select>
+                            </div>
+                            <div class="menuM">
+                                <select name="package" id="packageM">
+                                    <option value="" selected="selected">--Lunch or Dinner--</option>
+                                    <option value="1">Both</option>
+                                    <option value="2">Lunch</option>
+                                    <option value="3">Dinner</option>
+                                </select>
+                            </div>
+                            <!-- <div class="search">
+                                                <input type="search" name="search" id="searchMcu" placeholder="Search for Customers">
+                                            </div> -->
+                            <div class="scrh" style="cursor: pointer;">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="btnMeal">
+                                <button type="exportPDF" id="exportPDF">PDF</button>
+                            </div>
+                        </div>
+
+                        <table class="tblhead" id="">
+                            <thead>
+                                <tr>
+                                    <th><a href="date.html" title="See History">Date</a></th>
+
+                                    <th><a href="lunchHistory.html" title="See History">Lunch</a></th>
+                                    <th><a href="dinnerHistory.html" title="See History">Dinner</a></th>
+                                    <th><a href="scvs.html" title="See History">SCVS</a></th>
+                                    <th><a href="extrascvs.html" title="See History">Extra SCVS</a></th>
+                                    <th><a href="deposit.html" title="See History">Total Price</a></th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbodyC ">
+                                <tr>
+                                    <td class="name date">9/23/2022</td>
+
+                                    <td class=" l-Info ">
+                                        <p> <a href="#" class="mealOnn">Normal</a></p>
+                                        <p> <a href="#" class="red">-Quantity: 2</a></p>
+                                        <p> <a href="" class="red">-Price: 42.5৳</a></p>
+                                        <nav class="l">
+                                            <p>Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para</p>
+
+                                        </nav>
+
+                                    </td>
+                                    <td class=" d-Info">
+                                        <p> <a href="#" class="mealOff">Special</a></p>
+                                        <p> <a href="#" class="red">-Quantity: 2</a></p>
+                                        <p> <a href="" class="red">-Price: 80৳</a></p>
+                                        <nav class="d">
+                                            <p>Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para</p>
+
+                                        </nav>
+
+                                    </td>
+
+                                    <td class="mOO scvs ">
+                                        <p style="color: red; font-weight: bold;" class="scvsid">20৳</p>
+                                        <br>
+
+                                    </td>
+                                    <td class="mOO e-scvs">
+                                        <p style="color: red; font-weight: bold;" class="eSCVCid">00৳</p>
+                                        <br>
+
+                                    </td>
+                                    <td class="tMeal price ">
+                                        <p style="color: red; font-weight: bold;" class="price2">150৳</p>
+
+
+
+
+
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,8 +295,35 @@
     </div>
 
 
-    <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        {
+            $(function() {
+                $('input[name="daterange"]').daterangepicker({
+                    opens: 'left'
+                }, function(start, end, label) {
+                    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+                });
+            });
+        }
+        // Expand
+        // {
+        let epandDO = document.getElementById('epandDO');
+        let epandDC = document.getElementById('epandDC');
+        let expandID = document.getElementById('expandID');
+
+        epandDC.addEventListener('click', () => {
+            expandID.classList.toggle('expandID');
+            epandDO.classList.toggle('epandDO');
+            epandDC.classList.toggle('epandDC');
+        })
+        epandDO.addEventListener('click', () => {
+            expandID.classList.toggle('expandID');
+            epandDC.classList.toggle('epandDC');
+            epandDO.classList.toggle('epandDO');
+        })
+    </script>
 </body>
 
 

@@ -81,9 +81,10 @@
         <div class="sub-d-container">
             <div class="dash-menu">
                 <div class="dash-sub-menu">
-                    <a href=" dashbord.html" class="dash-btn">Dashboard</a>
+                    <a href=" dashbord.html">Dashboard</a>
+                    <a href="profile.html" class="profile-btn">Profile</a>
                     <a href=" mealonof.html" class="mealonof-btn">Meal On/Off</a>
-                    <a href=" setting.html" style="background: #f1f1f1; box-shadow:none;">Setting</a>
+                    <a href=" setting.html" class="setting-btn" style="background: #f1f1f1; box-shadow:none;">Setting</a>
                     <a href=" history.html" class="history-btn">History</a>
                 </div>
             </div>
@@ -114,15 +115,16 @@
                                 <div class="control-group s-contron-grup">
                                     <label for="Lunch">Lunch</label>
                                     <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-dis" />
+                                        <input type="checkbox" checked="checked" class="check-dis mealSubL" />
                                         <div class="control_indicator"></div>
                                     </label>
                                     <label for="Dinner">Dinner</label>
                                     <label class="control control-checkbox">
-                                        <input type="checkbox" checked="checked" class="check-dis" />
+                                        <input type="checkbox" checked="checked" class="check-dis mealSubD" />
                                         <div class="control_indicator"></div>
                                     </label>
                                 </div>
+                                <p class="errTxt"></p>
                             </div>
                         </div>
                     </div>
@@ -208,7 +210,7 @@
 
 
     <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
     <script src="js/setting.js"></script>
     <!-- <script src=" js/sub-menu.js"></script> -->
 
