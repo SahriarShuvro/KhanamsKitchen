@@ -26,3 +26,27 @@ $(function() {
     cb(start, end);
 
 });
+
+// Payment Date 
+{
+    let paymentDate = document.querySelectorAll(".paymentDate");
+
+    let dayOfMonthForPaymentPopup = [30, 27, 30, 29, 30, 29, 30, 30, 29, 30, 29, 30]
+    let date = new Date(2022, 10, 01);
+    let month = dayOfMonthForPaymentPopup[date.getMonth()];
+    let day = date.getDate() + 1;
+
+
+    for (let i = 0; i <= month; i++) {
+        day--;
+        paymentDate[i].innerHTML = day;
+        if (day > month && day > 0) {
+            day = 0;
+        }
+    }
+}
+
+// Popup Date RangePeeker 
+{
+
+}

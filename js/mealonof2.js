@@ -37,14 +37,14 @@
 
         window.addEventListener('load', OnLoadFuntion => {
             if (clickToCheckUncheckL.checked == true) {
-                txtCheckUncheckL.innerHTML = "Uncheck All";
+                txtCheckUncheckL.innerHTML = "Meal Off";
                 txtOnOfL.innerHTML = "Untill I Turn Off";
                 for (let i = 0; i < dayCheckForL.length; i++) {
                     const lunchCheck = dayCheckForL[i];
                     lunchCheck.setAttribute('checked', 'checked');
                 }
             } else {
-                txtCheckUncheckL.innerHTML = "Check All";
+                txtCheckUncheckL.innerHTML = "Meal On";
 
                 txtOnOfL.innerHTML = "Untill I Turn On";
                 for (let i = 0; i < dayCheckForL.length; i++) {
@@ -57,7 +57,7 @@
 
         clickToCheckUncheckL.addEventListener('click', OnClickFuntion => {
             if (clickToCheckUncheckL.checked == true) {
-                txtCheckUncheckL.innerHTML = "Uncheck All";
+                txtCheckUncheckL.innerHTML = "Meal Off";
                 txtOnOfL.innerHTML = "Untill I Turn Off";
 
 
@@ -66,7 +66,7 @@
                     lunchCheck.setAttribute('checked', 'checked');
                 }
             } else {
-                txtCheckUncheckL.innerHTML = "Check All";
+                txtCheckUncheckL.innerHTML = "Meal On";
                 txtOnOfL.innerHTML = "Untill I Turn On";
 
                 for (let i = 0; i < dayCheckForL.length; i++) {
@@ -87,14 +87,14 @@
 
         window.addEventListener('load', OnLoadFuntionD => {
             if (clickToCheckUncheckD.checked == true) {
-                txtCheckUncheckD.innerHTML = "Uncheck All";
+                txtCheckUncheckD.innerHTML = "Meal Off";
                 txtOnOfD.innerHTML = "Untill I Turn Off";
                 for (let i = 0; i < dayCheckForD.length; i++) {
                     const lunchCheck = dayCheckForD[i];
                     lunchCheck.setAttribute('checked', 'checked');
                 }
             } else {
-                txtCheckUncheckD.innerHTML = "Check All";
+                txtCheckUncheckD.innerHTML = "Meal On";
 
                 txtOnOfD.innerHTML = "Untill I Turn On";
                 for (let i = 0; i < dayCheckForD.length; i++) {
@@ -107,7 +107,7 @@
 
         clickToCheckUncheckD.addEventListener('click', OnClickFuntionD => {
             if (clickToCheckUncheckD.checked == true) {
-                txtCheckUncheckD.innerHTML = "Uncheck All";
+                txtCheckUncheckD.innerHTML = "Meal Off";
                 txtOnOfD.innerHTML = "Untill I Turn Off";
 
 
@@ -116,7 +116,7 @@
                     lunchCheck.setAttribute('checked', 'checked');
                 }
             } else {
-                txtCheckUncheckD.innerHTML = "Check All";
+                txtCheckUncheckD.innerHTML = "Meal On";
                 txtOnOfD.innerHTML = "Untill I Turn On";
 
                 for (let i = 0; i < dayCheckForD.length; i++) {
@@ -141,14 +141,14 @@
 
             window.addEventListener('load', OnLoadFuntion => {
                 if (clickToCheckUncheckNormalL.checked == true) {
-                    txtCheckUncheckNormalL.innerHTML = "Uncheck All";
+                    txtCheckUncheckNormalL.innerHTML = "Meal Off";
                     txtOnOfNormalL.innerHTML = "Untill I Turn Off";
                     for (let i = 0; i < dayCheckForNormalL.length; i++) {
                         const lunchCheckNormal = dayCheckForNormalL[i];
                         lunchCheckNormal.setAttribute('checked', 'checked');
                     }
                 } else {
-                    txtCheckUncheckNormalL.innerHTML = "Check All";
+                    txtCheckUncheckNormalL.innerHTML = "Meal On";
 
                     txtOnOfNormalL.innerHTML = "Untill I Turn On";
                     for (let i = 0; i < dayCheckForNormalL.length; i++) {
@@ -161,7 +161,7 @@
 
             clickToCheckUncheckNormalL.addEventListener('click', OnClickFuntion => {
                 if (clickToCheckUncheckNormalL.checked == true) {
-                    txtCheckUncheckNormalL.innerHTML = "Uncheck All";
+                    txtCheckUncheckNormalL.innerHTML = "Meal Off";
                     txtOnOfNormalL.innerHTML = "Untill I Turn Off";
 
 
@@ -170,7 +170,7 @@
                         lunchCheckNormal.setAttribute('checked', 'checked');
                     }
                 } else {
-                    txtCheckUncheckNormalL.innerHTML = "Check All";
+                    txtCheckUncheckNormalL.innerHTML = "Meal On";
                     txtOnOfNormalL.innerHTML = "Untill I Turn On";
 
                     for (let i = 0; i < dayCheckForNormalL.length; i++) {
@@ -191,14 +191,14 @@
 
             window.addEventListener('load', OnLoadFuntion => {
                 if (clickToCheckUncheckSpacialL.checked == true) {
-                    txtCheckUncheckSpacialL.innerHTML = "Uncheck All";
+                    txtCheckUncheckSpacialL.innerHTML = "Meal Off";
                     txtOnOfSpacialL.innerHTML = "Untill I Turn Off";
                     for (let i = 0; i < dayCheckForSpacialL.length; i++) {
                         const lunchCheckSpacial = dayCheckForSpacialL[i];
                         lunchCheckSpacial.setAttribute('checked', 'checked');
                     }
                 } else {
-                    txtCheckUncheckSpacialL.innerHTML = "Check All";
+                    txtCheckUncheckSpacialL.innerHTML = "Meal On";
 
                     txtOnOfSpacialL.innerHTML = "Untill I Turn On";
                     for (let i = 0; i < dayCheckForSpacialL.length; i++) {
@@ -211,7 +211,7 @@
 
             clickToCheckUncheckSpacialL.addEventListener('click', OnClickFuntion => {
                 if (clickToCheckUncheckSpacialL.checked == true) {
-                    txtCheckUncheckSpacialL.innerHTML = "Uncheck All";
+                    txtCheckUncheckSpacialL.innerHTML = "Meal Off";
                     txtOnOfSpacialL.innerHTML = "Untill I Turn Off";
 
 
@@ -220,7 +220,7 @@
                         lunchCheckSpacial.setAttribute('checked', 'checked');
                     }
                 } else {
-                    txtCheckUncheckSpacialL.innerHTML = "Check All";
+                    txtCheckUncheckSpacialL.innerHTML = "Meal On";
                     txtOnOfSpacialL.innerHTML = "Untill I Turn On";
 
                     for (let i = 0; i < dayCheckForSpacialL.length; i++) {
@@ -244,7 +244,7 @@
 
             window.addEventListener('load', OnLoadFuntion => {
                 if (clickToCheckUncheckNormalD.checked == true) {
-                    txtCheckUncheckNormalD.innerHTML = "Uncheck All";
+                    txtCheckUncheckNormalD.innerHTML = "Meal Off";
                     txtOnOfNormalD.innerHTML = "Untill I Turn Off";
                     txtOnOfNormalD.innerHTML = "Untill I Turn Off";
                     for (let i = 0; i < dayCheckForNormalD.length; i++) {
@@ -252,7 +252,7 @@
                         lunchCheckNormal.setAttribute('checked', 'checked');
                     }
                 } else {
-                    txtCheckUncheckNormalD.innerHTML = "Check All";
+                    txtCheckUncheckNormalD.innerHTML = "Meal On";
 
                     txtOnOfNormalD.innerHTML = "Untill I Turn On";
                     txtOnOfNormalD.innerHTML = "Untill I Turn On";
@@ -266,7 +266,7 @@
 
             clickToCheckUncheckNormalD.addEventListener('click', OnClickFuntion => {
                 if (clickToCheckUncheckNormalD.checked == true) {
-                    txtCheckUncheckNormalD.innerHTML = "Uncheck All";
+                    txtCheckUncheckNormalD.innerHTML = "Meal Off";
                     txtOnOfNormalD.innerHTML = "Untill I Turn Off";
                     txtOnOfNormalD.innerHTML = "Untill I Turn Off";
 
@@ -276,7 +276,7 @@
                         lunchCheckNormal.setAttribute('checked', 'checked');
                     }
                 } else {
-                    txtCheckUncheckNormalD.innerHTML = "Check All";
+                    txtCheckUncheckNormalD.innerHTML = "Meal On";
                     txtOnOfNormalD.innerHTML = "Untill I Turn On";
                     txtOnOfNormalD.innerHTML = "Untill I Turn On";
 
@@ -298,14 +298,14 @@
 
             window.addEventListener('load', OnLoadFuntion => {
                 if (clickToCheckUncheckSpacialD.checked == true) {
-                    txtCheckUncheckSpacialD.innerHTML = "Uncheck All";
+                    txtCheckUncheckSpacialD.innerHTML = "Meal Off";
                     txtOnOfSpacialD.innerHTML = "Untill I Turn Off";
                     for (let i = 0; i < dayCheckForSpacialD.length; i++) {
                         const lunchCheckSpacial = dayCheckForSpacialD[i];
                         lunchCheckSpacial.setAttribute('checked', 'checked');
                     }
                 } else {
-                    txtCheckUncheckSpacialD.innerHTML = "Check All";
+                    txtCheckUncheckSpacialD.innerHTML = "Meal On";
 
                     txtOnOfSpacialD.innerHTML = "Untill I Turn On";
                     for (let i = 0; i < dayCheckForSpacialD.length; i++) {
@@ -318,7 +318,7 @@
 
             clickToCheckUncheckSpacialD.addEventListener('click', OnClickFuntion => {
                 if (clickToCheckUncheckSpacialD.checked == true) {
-                    txtCheckUncheckSpacialD.innerHTML = "Uncheck All";
+                    txtCheckUncheckSpacialD.innerHTML = "Meal Off";
                     txtOnOfSpacialD.innerHTML = "Untill I Turn Off";
 
 
@@ -327,7 +327,7 @@
                         lunchCheckSpacial.setAttribute('checked', 'checked');
                     }
                 } else {
-                    txtCheckUncheckSpacialD.innerHTML = "Check All";
+                    txtCheckUncheckSpacialD.innerHTML = "Meal On";
                     txtOnOfSpacialD.innerHTML = "Untill I Turn On";
 
                     for (let i = 0; i < dayCheckForSpacialD.length; i++) {
